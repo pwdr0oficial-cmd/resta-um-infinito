@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resta Um Infinito</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="mode-selector">
+    <button id="btn-hard" class="mode-btn active">Modo Padrão (Difícil)</button>
+    <button id="btn-easy" class="mode-btn">Modo Fácil</button>
+</div>
+
+<div class="instruction-box">
+    <h3>OBJETIVO: FILEIRA 9</h3>
+    <p id="instruction-text"></p>
+</div>
+
+<div class="record-panel">
+    <div>Recorde Fileira: <span id="best-row">0</span></div>
+    <div>Recorde Pontos: <span id="best-score">0</span></div>
+</div>
+
+<div id="phase-text">Fase: Preparação</div>
+
+<div class="status-panel">
+    <div>Peças <span id="placed-count">0</span></div>
+    <div>Pontos <span id="current-score">0</span></div>
+    <button id="start-btn">Começar</button>
+    <button id="reset-btn">Reiniciar</button>
+</div>
+
+<div class="board-container">
+    <div class="red-line"></div>
+    <div id="board" class="board"></div>
+</div>
+
+<script src="js/storage.js"></script>
+<script src="js/board.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/game.js"></script>
+
+</body>
+</html>
