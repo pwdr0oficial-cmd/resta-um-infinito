@@ -8,39 +8,36 @@
 </head>
 <body>
 
-<div class="mode-selector">
-    <button id="btn-hard" class="mode-btn active">Modo Padrão (Difícil)</button>
-    <button id="btn-easy" class="mode-btn">Modo Fácil</button>
-</div>
+    <div class="mode-selector">
+        <button id="btn-hard" class="mode-btn active">Modo Padrão (Difícil)</button>
+        <button id="btn-easy" class="mode-btn">Modo Fácil</button>
+    </div>
 
-<div class="instruction-box">
-    <h3>OBJETIVO: FILEIRA 9</h3>
-    <p id="instruction-text"></p>
-</div>
+    <div class="instruction-box">
+        <h3 class="highlight-text">OBJETIVO: FILEIRA 9</h3>
+        <p id="instruction-text"><b>Modo Padrão:</b> Posicione as peças na zona inferior e comece.</p>
+    </div>
 
-<div class="record-panel">
-    <div>Recorde Fileira: <span id="best-row">0</span></div>
-    <div>Recorde Pontos: <span id="best-score">0</span></div>
-</div>
+    <div class="record-panel">
+        <div>Recorde Fileira: <span id="best-row">0</span>º</div>
+        <div>Recorde Pontos: <span id="best-score">0</span></div>
+    </div>
 
-<div id="phase-text">Fase: Preparação</div>
+    <div id="phase-text" class="phase-text highlight-text">Fase: Preparação</div>
 
-<div class="status-panel">
-    <div>Peças <span id="placed-count">0</span></div>
-    <div>Pontos <span id="current-score">0</span></div>
-    <button id="start-btn">Começar</button>
-    <button id="reset-btn">Reiniciar</button>
-</div>
+    <div class="status-panel">
+        <div class="counter-box">Peças <span id="placed-count">0</span></div>
+        <div class="counter-box">Pontos <span id="current-score">0</span></div>
+        <button id="start-btn" class="action-btn btn-start" disabled>Começar</button>
+        <button id="reset-btn" class="action-btn btn-reset">Reiniciar</button>
+    </div>
 
-<div class="board-container">
-    <div class="red-line"></div>
-    <div id="board" class="board"></div>
-</div>
+    <div class="board-container">
+        <div class="red-line"></div>
+        <div id="board" class="board"></div>
+    </div>
 
-<script src="js/storage.js"></script>
-<script src="js/board.js"></script>
-<script src="js/ui.js"></script>
-<script src="js/game.js"></script>
+    <script type="module" src="js/main.js"></script>
 
 </body>
 </html>
