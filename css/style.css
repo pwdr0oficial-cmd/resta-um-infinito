@@ -1,0 +1,34 @@
+:root {
+    --bg-claro: #eeeed2;
+    --bg-escuro: #769656;
+    --linha-vermelha: #ff0000;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #312e2b;
+    color: white;
+    font-family: Arial;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(9, 60px);
+}
+
+.cell {
+    width: 60px;
+    height: 60px;
+}
+
+.clara { background: var(--bg-claro); }
+.escura { background: var(--bg-escuro); }
+
+.piece {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: black;
+}
